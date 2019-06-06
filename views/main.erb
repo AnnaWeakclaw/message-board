@@ -13,7 +13,7 @@ or if you want to use an icon for the title bar, you can use icon convertor to g
 </head>
 <body>
 <div>
-<% @all_posts.each do |post|%>
+<% @all_posts.reverse_each do |post|%>
   <%=post.name%> posted: <br>
   <%=post.content%> <br>
 <% end%>
